@@ -1,0 +1,601 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 118%;
+}
+
+@media (max-width: 970px) {
+  .rightNav img {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .buttonscrol1 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .buttonscrol {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 105%;
+  }
+  .myAccountBox > .address, .eth, .neytoken {
+    display: none;
+  }
+  .contributors {
+    display: none;
+  }
+  .tokenSaleContainer .totalSuppy {
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+}
+
+@media (max-width: 630px) {
+  .imgAbout {
+    display: none;
+  }
+  .flex .neyContainer img {
+    display: none;
+  }
+  .boxContribute .contributeContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .buyCoins {
+    flex-direction: column;
+  }
+  .buyCoins .amountToBuy {
+    margin-bottom: 2%;
+  }
+  .buyCoins .etherNey {
+    margin-top: 1%;
+  }
+  .boxtoken {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 100%;
+  }
+  .tokenSaleContainer {
+    margin-bottom: 4%;
+    flex-direction: column-reverse;
+  }
+  .tokenSaleContainer .tokenSaleLeftSide {
+    border-right: none;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tokenSaleContainer .totalSuppy {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .tokenSaleContainer .tokensSold {
+    font-size: 1.6em;
+    }
+  .Icons i {
+    margin-bottom: 4%;
+    padding-bottom: 10px;
+  }
+  .buttonContainer > div {
+    margin-bottom: 4%;
+    padding-top: 2%;
+  }
+  .whatIs , .team , .roadmap, .contribute {
+    padding-top: 20px;
+  }
+  .whatIsHeader {
+    padding-top: 20px;
+  }
+  .boxhome {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 95%;
+  }
+  .middleNav {
+    display: none;
+  }
+  .titleICO {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 87%;
+  }
+  .container .header1 {
+    font-size: 1.85em;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(ellipse at top, #121415, transparent),
+            radial-gradient(ellipse at bottom, #121415, transparent);
+  padding: auto;
+  margin: auto;
+  color:white;
+}
+
+nav {
+  background-color: #121415;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: auto;
+  box-shadow: 0 4px 4px rgba(0,0,0,.5);
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+}
+
+.Neycoin img {
+  max-width:75px;
+  max-height:75px;
+  width: 100%;
+  margin-left: 15%;
+}
+
+.titleICO {
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ff8c00;
+  opacity: 0.98;
+}
+
+.titleICO > i {
+  font-size: 1em;
+  align-items: center;
+}
+
+.titleICO > div {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.middleNav {
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1%;
+}
+
+.rightNav {
+  display:flex;
+  align-items: center;
+}
+
+.rightNav img {
+  max-width:50px;
+  max-height:50px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.myAccountBox > .address, .eth, .neytoken {
+  font-size:0.8em;
+  color: white;
+  opacity: 0.9;
+  margin-right:10px;
+  max-width: 110px;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1%;
+  opacity: 0.95;
+}
+
+.containerMiddle {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  max-width:1000px;
+  width: 100%;
+  margin: auto;
+  color: white;
+  opacity: 0.95;
+}
+
+.header1 {
+  font-size: 2em;
+  color: #ff8c00;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.neyContainer img {
+  max-width:200px;
+  max-height:200px;
+  width: 100%;
+  opacity: 0.95;
+  margin-top: 10%;
+}
+
+.buttonContainer > div{
+  display: block;
+  margin-top: 2.5%;
+  overflow: auto;
+}
+
+.textArea {
+  width: 100%;
+  max-width: 672px;
+  font-size: 1.4em;
+  opacity: 0.95;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.tokenSaleContainer {
+   max-width: 1000px;
+	 width: 100%;
+	 background-color: #121415;
+   box-shadow: 0px 1px 8px rgba(0,150,255,1);
+   padding-top: 1%;
+   padding-bottom: 2%;
+   border: 1px solid #1e90ff;
+   margin-top: 2.3%;
+   display: flex;
+}
+
+.tokenSaleLeftSide {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-right: 1px solid #fff;
+}
+
+.tokensSold, .contributors {
+  font-size:1.35em;
+  color: #fff;
+  opacity:0.95;
+}
+
+.totalSuppy {
+ margin-top: 3%;
+ margin-bottom: 3%;
+ font-size:1.6em;
+ color:#fff;
+ opacity:0.95;
+}
+
+.tokenSaleRightSide {
+  margin-top: 0.8%;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleTokenSale {
+  font-size: 1.7em;
+  color: #fff;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tokenSaleEnds {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1em;
+  opacity: 0.95;
+  margin-top: 2%;
+}
+.time {
+  margin-top: 3%;
+}
+.time > div {
+  color: #fff;
+}
+.headerTime {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.7em;
+  opacity: 0.95;
+}
+.Icons {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.Icons i {
+  font-size: 1.7em;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.whatIs , .team , .roadmap, .contribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 2.1em;
+  color: #ff8c00;
+  opacity: 0.95;
+  margin-top:7%;
+  margin-bottom:4%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.textAreaWhatIs {
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+.whatIsHeader  {
+  font-size:1.2em;
+  color: #ff8c00;
+  opacity:0.95;
+  font-weight:bold;
+  margin-bottom:2%;
+  margin-top:2%;
+}
+
+.whitepaper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top:7%;
+}
+
+.roadmapImage img {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxContribute {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contributeContainer {
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #1e90ff;
+  margin-bottom: 7%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0px 1px 8px rgba(0,150,255,1);
+}
+
+.TextField {
+  background-color: white;
+}
+
+.buyCoins {
+  font-size: 1.3em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amountToBuy {
+  font-weight:bold;
+  color:white;
+  opacity: 0.95;
+}
+
+.etherNey {
+  color:white;
+  opacity:0.9;
+}
+
+.successfully {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size:1.6em;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color:#43A047;
+  margin-top: 2%;
+  color: white;
+  padding: 20px;
+}
+.buttonBuy {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-top: 2.5%;
+}
+.errorMessage {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color:#D32E30;
+  margin-top: 2%;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+}
+.errorMessage > i {
+  margin-right: 2%;
+  font-size: 1.6em;
+}
+.loadingText {
+  padding-top: 10px;
+  font-size:1.7em;
+  color:white;
+  opacity:0.95;
+  font-weight: bold;
+}
+.loadTextSub {
+  font-size:1.2em;
+  color:white;
+  opacity:0.80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loadingContainer > div {
+  margin-right: 2%;
+}
+
+.footer {
+  background-color: #121415;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: auto;
+  box-shadow: 0 4px 4px rgba(0,0,0,.5);
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+  margin-top: 3%;
+}
+
+.boxtoken {
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+}
+.boxtoken2 {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+}
+
+.imgtokenomics img {
+  display: flex;
+  max-width:500px;
+  max-height:500px;
+  width: 100%;
+  opacity: 0.95;
+  margin-top: 5%;
+}
+
+.texthowbuy {
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+.neyadr {
+  overflow:auto;
+}
+
+.boxhome {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 8%;
+}
+
+.bsclink {
+  text-decoration: none;
+}
+
+.wtplink {
+  text-decoration: none;
+}
