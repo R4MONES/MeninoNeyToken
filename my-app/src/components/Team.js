@@ -32,6 +32,7 @@ class Team extends Component {
           </div>
           <div class="Icons space-around flex">
             <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
             <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
             <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
           </div>

@@ -15,7 +15,8 @@ class Start extends Component {
   totalSupply: '',
   days:'',
   hours:'',
-  minutes:''
+  minutes:'',
+  seconds:''
 }
 
   async componentDidMount(){
@@ -33,9 +34,11 @@ class Start extends Component {
   let days = date.getDate();
   let hours = date.getHours();
   let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
 
-  this.setState({contributers, totalSupply, days, hours, minutes})
+  this.setState({contributers, totalSupply, days, hours, minutes, seconds})
 }
+
 
   render() {
     return (
@@ -49,10 +52,10 @@ class Start extends Component {
               <div class="textArea">
                 <div>Opportunity for investors to buy their $NEY tokens before being listed on decentralized and centralized exchanges.</div>
                 <p></p>
-                <div>Total Supply : 11.000.000.000 NEY.</div>
-                <div>Presale Tokens : 2.200.000.000 NEY.</div>
-                <div>Presale Price : $ 0,00009.</div>
-                <div>Listing 01/OCT/2022 : PancakeSwap.</div>
+                <div>Total Supply : 11.000.000.000 NEY</div>
+                <div>Presale Tokens : 2.200.000.000 NEY</div>
+                <div>Presale Price : $ 0,00009</div>
+                <div>Listing on PancakeSwap : 01/OCT/2022</div>
 
                 <div class="buttonContainer">
                   <div> <ConnectButton variant="contained" color="primary" onClick></ConnectButton> </div>
@@ -103,6 +106,7 @@ class Start extends Component {
         </div>
         <div class="Icons space-around flex">
           <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
           <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
           <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
         </div>

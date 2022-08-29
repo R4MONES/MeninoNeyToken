@@ -68,7 +68,7 @@ html {
 
 @media (max-width: 500px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
   .tokenSaleContainer {
     margin-bottom: 4%;
@@ -112,7 +112,7 @@ html {
 
 @media (max-width: 425px) {
   html {
-    font-size: 95%;
+    font-size: 85%;
   }
   .middleNav {
     display: none;
@@ -124,7 +124,7 @@ html {
 
 @media (max-width: 375px) {
   html {
-    font-size: 87%;
+    font-size: 80%;
   }
   .container .header1 {
     font-size: 1.85em;
@@ -133,7 +133,7 @@ html {
 
 @media (max-width: 320px) {
   html {
-    font-size: 70%;
+    font-size: 65%;
   }
 }
 
