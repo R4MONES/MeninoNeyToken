@@ -20,7 +20,7 @@ class About extends Component {
                <div class="whatIsHeader">Tokenomics</div>
                <p></p>
                <div>Presale Price : $0.00009</div>
-               <div>Listing Price : $0.00011</div>
+               <div>Listing Price : $0.00012</div>
                <p></p>
                <div>Total Supply : 11.000.000.000</div>
                <div>Burn : 4.950.000.000 (45%)</div>

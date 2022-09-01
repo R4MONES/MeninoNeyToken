@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect} from 'react';
 import Button from '@mui/material/Button';
 import scrollToComponent from 'react-scroll-to-component';
 import logo from '../logo/neycoin.png';
@@ -19,7 +19,7 @@ class Start extends Component {
   seconds:''
 }
 
-  async componentDidMount(){
+  async componentDidMount() {
 
   let contributers = await ico.methods.allContributers().call();
   let totalSupply = await ico.methods.totalSupply().call();
@@ -39,8 +39,8 @@ class Start extends Component {
   this.setState({contributers, totalSupply, days, hours, minutes, seconds})
 }
 
-
   render() {
+
     return (
 
       <div>
@@ -98,17 +98,17 @@ class Start extends Component {
                   <div>
                     <div class="headerTime" >{this.state.minutes}</div>
                     <div>Min</div>
-                  </div>
+                  </div>  
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="Icons space-around flex">
-          <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
-          <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-          <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
-          <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/meninoneytoken/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
+          <a href="https://twitter.com/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
         </div>
 
       </div>

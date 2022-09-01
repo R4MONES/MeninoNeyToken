@@ -11,7 +11,7 @@ if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
 } else {
 
   const provider = new Web3.providers.HttpProvider(
-    'https://data-seed-prebsc-1-s1.binance.org:8545'
+    'https://bsc-dataseed.binance.org/'
   );
 
   web3 = new Web3(provider);

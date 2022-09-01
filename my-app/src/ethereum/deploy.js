@@ -5,8 +5,8 @@ const compiledNewICO = require ('./build/ICO.json');
 
 const provider = new HDWalletProvider
 (
-  'crouch thing easily neglect emerge timber wagon flock critic hurt sleep lawsuit',
-  'https://data-seed-prebsc-1-s1.binance.org:8545'
+  'legal lamp smoke gossip swear jar isolate market pattern glare pottery practice',
+  'https://bsc-dataseed.binance.org/'
 )
 
 const web3 = new Web3(provider);

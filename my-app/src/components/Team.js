@@ -23,18 +23,18 @@ class Team extends Component {
               <div class="whatIsHeader">Add $NEY To MetaMask</div>
               <div>Go to your wallet, press the 'Import token' button at the bottom of the assets list screen, tap 'Custom Tokens' and paste the $NEY token address in the slot provided, press 'Add Custom Token' at the bottom of the screen.</div>
               <div class="whatIsHeader">Contract Address</div>
-              <div class="neyadr">0xbb387a2b5b9fB3F132A556e6E6DC1F8709dA6380</div>
+              <div class="neyadr">0x4b0C3fF6c352818D2867c61CEf530389180F4E4b</div>
             </div>
           </div>
           <div class="boxhome">
             <div><Button variant="outlined" onClick={() => scrollToComponent(this.Home , { offset: -4000, align: 'top', duration: 1000})}>HOME</Button></div>
-            <a href="https://testnet.bscscan.com/token/0xbb387a2b5b9fB3F132A556e6E6DC1F8709dA6380" class="bsclink" target="_blank" rel="noreferrer"><Button variant="outlined">BSCSCAN</Button></a>
+            <a href="https://bscscan.com/token/0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="bsclink" target="_blank" rel="noreferrer"><Button variant="outlined">BSCSCAN</Button></a>
           </div>
           <div class="Icons space-around flex">
-            <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
-            <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-            <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
-            <a href="/" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/meninoneytoken/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://twitter.com/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
           </div>
          <div class="footer">
            <div>©2022 | Menino Ney Token. All rights reserved.</div>
