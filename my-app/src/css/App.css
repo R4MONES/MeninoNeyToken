@@ -94,9 +94,14 @@ html {
     margin-bottom: 4%;
     padding-bottom: 10px;
   }
+  .boxmeta {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
   .buttonContainer > div {
-    margin-bottom: 4%;
-    padding-top: 2%;
+    margin-bottom: 8%;
+    padding-top: 18px;
   }
   .whatIs , .team , .roadmap, .contribute {
     padding-top: 20px;
@@ -254,8 +259,8 @@ nav {
 
 .buttonContainer > div{
   display: block;
-  margin-top: 2.5%;
   overflow: auto;
+  margin-top: -1%;
 }
 
 .textArea {

@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from 'react';
+import React, {Component} from 'react';
 import Button from '@mui/material/Button';
 import scrollToComponent from 'react-scroll-to-component';
 import logo from '../logo/neycoin.png';
@@ -56,16 +56,16 @@ class Start extends Component {
                 <div>Presale Tokens : 2.200.000.000 NEY</div>
                 <div>Presale Price : $ 0,00009</div>
                 <div>Listing on PancakeSwap : 01/OCT/2022</div>
-
-                <div class="buttonContainer">
-                  <div> <ConnectButton variant="contained" color="primary" onClick></ConnectButton> </div>
-                </div>
               </div>
-
               <div class="neyContainer">
                 <img src={logo} alt="Logo"/>
               </div>
             </div>
+          <div class="boxmeta">
+             <div class="buttonContainer">
+              <div> <ConnectButton variant="contained" color="primary" onClick></ConnectButton> </div>
+            </div>
+          </div>
 
             <div class="tokenSaleContainer flex">
               <div class="tokenSaleLeftSide">
@@ -73,7 +73,7 @@ class Start extends Component {
                   <div class="tokensSold">TOKENS SOLDS:</div>
                   <div class="contributors">CONTRIBUTERS:<b>  {this.state.contributers}</b></div>
                 </div>
-               <div class="totalSuppy"> {this.state.totalSupply - 10986000000}<b> NEY </b></div>
+               <div class="totalSuppy"> {this.state.totalSupply - 10999000000}<b> NEY </b></div>
               <div class="buttonscrol">
                 <div ref={(section) => { this.Contribute = section; }}></div>
                 <div><Button variant="contained" color="primary" onClick={() => scrollToComponent(this.Contribute, { offset: 2550, align: 'top', duration: 1500})}>BUY MENINO NEY TOKEN</Button></div>
@@ -98,7 +98,7 @@ class Start extends Component {
                   <div>
                     <div class="headerTime" >{this.state.minutes}</div>
                     <div>Min</div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
