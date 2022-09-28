@@ -73,7 +73,7 @@ class Start extends Component {
                   <div class="tokensSold">TOKENS SOLDS:</div>
                   <div class="contributors">CONTRIBUTERS:<b>  {this.state.contributers}</b></div>
                 </div>
-               <div class="totalSuppy"> {this.state.totalSupply - 10999000000}<b> NEY </b></div>
+               <div class="totalSuppy"> {this.state.totalSupply - 6048000000}<b> NEY </b></div>
               <div class="buttonscrol">
                 <div ref={(section) => { this.Contribute = section; }}></div>
                 <div><Button variant="contained" color="primary" onClick={() => scrollToComponent(this.Contribute, { offset: 2550, align: 'top', duration: 1500})}>BUY MENINO NEY TOKEN</Button></div>

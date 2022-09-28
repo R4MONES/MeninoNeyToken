@@ -8,7 +8,7 @@ import Roadmap from './components/Roadmap';
 import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
-import logo from './logo/neycoin.png';
+import logo from './logo/neycoin32.png';
 import bnbimg from './logo/binance-coin.png';
 
 import ico from './ethereum/ico'

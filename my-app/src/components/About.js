@@ -10,7 +10,7 @@ class About extends Component {
           <div class="textAreaWhatIs flex">
             <div>
               <div class="whatIsHeader">$NEY</div>
-              <div>Menino Ney Token ($NEY) is an BEP-20 utility token on the BNB-Smart-Chain blockchain that serves as the digital currency. The fan token was created with the aim of bringing the community together and attracting a global audience, facilitating interaction with the football player.</div>
+              <div>Menino Ney Token ($NEY) is an BEP-20 utility token on the BNB-Smart-Chain blockchain that serves as the digital currency. Fan token was created with the aim of bringing the community together and attracting a global audience, facilitating interaction with the football player.</div>
               <div class="whatIsHeader">What Is Fan Token?</div>
               <div>Fan Tokens are digital assets that never expire and provide their holders with exclusive benefits. Holders receive access to unique experiences such as meeting and greeting players, training day events, game tickets, NFTs and more.</div>
               <div class="whatIsHeader">Decentralized</div>

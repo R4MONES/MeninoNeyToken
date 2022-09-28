@@ -166,6 +166,8 @@ nav {
 }
 
 .Neycoin img {
+  padding-top: 12px;
+  padding-bottom: 12px;
   max-width:75px;
   max-height:75px;
   width: 100%;
