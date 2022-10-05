@@ -29,6 +29,7 @@ class Team extends Component {
           <div class="boxhome">
             <div><Button variant="outlined" onClick={() => scrollToComponent(this.Home , { offset: -4000, align: 'top', duration: 1000})}>HOME</Button></div>
             <a href="https://bscscan.com/token/0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="bsclink" target="_blank" rel="noreferrer"><Button variant="outlined">BSCSCAN</Button></a>
+            <a href="https://poocoin.app/tokens/0x4b0c3ff6c352818d2867c61cef530389180f4e4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="outlined">POOCOIN</Button></a>
           </div>
           <div class="Icons space-around flex">
             <a href="https://www.facebook.com/meninoneytoken" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>

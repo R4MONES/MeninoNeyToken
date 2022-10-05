@@ -386,6 +386,10 @@ nav {
   padding-right: 10px;
 }
 
+.contribute {
+  display: none;
+}
+
 .textAreaWhatIs {
   padding-right: 10px;
   padding-left: 10px;
@@ -429,6 +433,7 @@ nav {
 }
 
 .boxContribute {
+  display: none;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -600,6 +605,10 @@ nav {
 }
 
 .bsclink {
+  text-decoration: none;
+}
+
+.pancakelink {
   text-decoration: none;
 }
 

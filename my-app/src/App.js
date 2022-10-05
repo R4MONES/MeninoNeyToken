@@ -61,7 +61,6 @@ async componentDidMount(){
           <div class="middleNav">
               <i onClick={() => scrollToComponent(this.About, { offset: -60, align: 'top', duration: 1500})}><Button>About</Button></i>
               <i onClick={() => scrollToComponent(this.Roadmap, { offset: -60, align: 'top', duration: 1500})}><Button>RoadMap</Button></i>
-              <i onClick={() => scrollToComponent(this.Contribute, { offset: -60, align: 'top', duration: 1500})}><Button>Presale</Button></i>
               <i onClick={() => scrollToComponent(this.Team, { offset: -60, align: 'top', duration: 1500})}><Button>How to Buy?</Button></i>
           </div>
 

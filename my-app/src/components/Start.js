@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Button from '@mui/material/Button';
-import scrollToComponent from 'react-scroll-to-component';
 import logo from '../logo/neycoin.png';
 
 import ConnectButton from "./wallet/ConnectButton";
@@ -46,16 +45,13 @@ class Start extends Component {
       <div>
         <div class="container">
           <div class="containerMiddle">
-            <h1 class="header1">MENINO NEY TOKEN PRESALE</h1>
+            <h1 class="header1">MENINO NEY TOKEN</h1>
 
             <div class="flex">
               <div class="textArea">
-                <div>Opportunity for investors to buy their $NEY tokens before being listed on decentralized and centralized exchanges.</div>
+                <div>The Fan token was created with the aim of bringing the community together and attracting a global audience, facilitating interaction with the football player.</div>
                 <p></p>
-                <div>Total Supply : 11.000.000.000 NEY</div>
-                <div>Presale Tokens : 2.200.000.000 NEY</div>
-                <div>Presale Price : $ 0,00009</div>
-                <div>Listing on PancakeSwap : 01/OCT/2022</div>
+                <div>Holders receive access to unique experiences such as meeting and greeting players, training day events, game tickets, NFTs and more.</div>
               </div>
               <div class="neyContainer">
                 <img src={logo} alt="Logo"/>
@@ -70,17 +66,15 @@ class Start extends Component {
             <div class="tokenSaleContainer flex">
               <div class="tokenSaleLeftSide">
                 <div class="flex space-between">
-                  <div class="tokensSold">TOKENS SOLDS:</div>
-                  <div class="contributors">CONTRIBUTERS:<b>  {this.state.contributers}</b></div>
+                  <div class="tokensSold">SOLDS ON PRESALE:</div>
+                  <div class="contributors">CONTRIBUTERS:<b>  9</b></div>
                 </div>
-               <div class="totalSuppy"> {this.state.totalSupply - 6048000000}<b> NEY </b></div>
+               <div class="totalSuppy"> 2054950<b> NEY </b></div>
               <div class="buttonscrol">
-                <div ref={(section) => { this.Contribute = section; }}></div>
-                <div><Button variant="contained" color="primary" onClick={() => scrollToComponent(this.Contribute, { offset: 2550, align: 'top', duration: 1500})}>BUY MENINO NEY TOKEN</Button></div>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
               </div>
               <div class="buttonscrol1">
-                <div ref={(section) => { this.Contribute = section; }}></div>
-                <div><Button variant="contained" color="primary" onClick={() => scrollToComponent(this.Contribute, { offset: 1730, align: 'top', duration: 1500})}>BUY MENINO NEY TOKEN</Button></div>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
               </div>
               </div>
               <div class="tokenSaleRightSide">
@@ -88,15 +82,15 @@ class Start extends Component {
                 <div class="tokenSaleEnds">TOKEN SALE ENDs IN :</div>
                 <div class="time flex space-around">
                   <div>
-                    <div class="headerTime">{this.state.days}</div>
+                    <div class="headerTime">00</div>
                     <div>Days</div>
                   </div>
                   <div>
-                    <div class="headerTime" >{this.state.hours}</div>
+                    <div class="headerTime" >00</div>
                     <div>Hours</div>
                   </div>
                   <div>
-                    <div class="headerTime" >{this.state.minutes}</div>
+                    <div class="headerTime" >00</div>
                     <div>Min</div>
                   </div>
                 </div>
