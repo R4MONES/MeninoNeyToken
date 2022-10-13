@@ -50,7 +50,7 @@ async componentDidMount(){
 
     return (
 
-    <div>
+     <div>
         <nav>
           <div class="Neycoin">
             <img src={logo} alt="Logo"/>

@@ -46,8 +46,7 @@ class Start extends Component {
         <div class="container">
           <div class="containerMiddle">
             <h1 class="header1">MENINO NEY TOKEN</h1>
-
-            <div class="flex">
+             <div class="flex">
               <div class="textArea">
                 <div>The Fan token was created with the aim of bringing the community together and attracting a global audience, facilitating interaction with the football player.</div>
                 <p></p>
@@ -62,24 +61,23 @@ class Start extends Component {
               <div> <ConnectButton variant="contained" color="primary" onClick></ConnectButton> </div>
             </div>
           </div>
-
             <div class="tokenSaleContainer flex">
               <div class="tokenSaleLeftSide">
                 <div class="flex space-between">
                   <div class="tokensSold">SOLDS ON PRESALE:</div>
                   <div class="contributors">CONTRIBUTERS:<b>  9</b></div>
+                 </div>
+                <div class="totalSuppy"> 2054950<b> NEY </b></div>
+                <div class="buttonscrol">
+                 <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
                 </div>
-               <div class="totalSuppy"> 2054950<b> NEY </b></div>
-              <div class="buttonscrol">
-                <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
+                <div class="buttonscrol1">
+                 <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
               </div>
-              <div class="buttonscrol1">
-                <a href="https://pancakeswap.finance/swap?outputCurrency=0x4b0C3fF6c352818D2867c61CEf530389180F4E4b" class="pancakelink" target="_blank" rel="noreferrer"><Button variant="contained" color="primary">BUY $NEY ON PANCAKESWAP</Button></a>
-              </div>
-              </div>
-              <div class="tokenSaleRightSide">
-                <div class="titleTokenSale">TOKEN SALE IS LIVE</div>
-                <div class="tokenSaleEnds">TOKEN SALE ENDs IN :</div>
+            </div>
+          <div class="tokenSaleRightSide">
+            <div class="titleTokenSale">TOKEN SALE IS LIVE</div>
+              <div class="tokenSaleEnds">TOKEN SALE ENDs IN :</div>
                 <div class="time flex space-around">
                   <div>
                     <div class="headerTime">00</div>
