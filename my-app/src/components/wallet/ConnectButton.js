@@ -28,8 +28,8 @@ export default function ConnectButton() {
   };
 
   return (
-    <Button variant="contained" onClick={connectButtonOnClick}>
-      {!!accountAddress ? accountAddress : "Connect Metamask"}
-    </Button>
+      <Button class="connect" variant="contained" onClick={connectButtonOnClick}>
+        <div class="meta"> {!!accountAddress ? accountAddress : "Connect Wallet"}</div>
+      </Button>
   );
 }

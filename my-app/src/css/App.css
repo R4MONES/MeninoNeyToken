@@ -1,10 +1,10 @@
 * {
-  font-family: monospace;
+  font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 118%;
+  font-size: 110%;
 }
 
 @media (max-width: 970px) {
@@ -27,7 +27,7 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 105%;
+    font-size: 100%;
   }
   .myAccountBox > .address, .eth, .neytoken {
     display: none;
@@ -39,6 +39,11 @@ html {
     margin-top: 6%;
     margin-bottom: 6%;
   }
+
+  .buttonContainer {
+    max-width: 200px;
+  }
+  
 }
 
 @media (max-width: 630px) {
@@ -64,81 +69,63 @@ html {
   .boxtoken {
     flex-direction: column;
   }
+  .containerMiddle {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .team {
+    margin-top: 9px;
+  }
 }
 
 @media (max-width: 500px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
   }
-  .tokenSaleContainer {
-    margin-bottom: 4%;
-    flex-direction: column-reverse;
+  .joinsale {
+    padding-top: 12px;
   }
-  .tokenSaleContainer .tokenSaleLeftSide {
-    border-right: none;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .tokenSaleContainer .totalSuppy {
-    margin-top: 2%;
-    margin-bottom: 3%;
-  }
-  .tokenSaleContainer .tokensSold {
-    font-size: 1.6em;
-    }
-  .Icons i {
-    margin-bottom: 4%;
-    padding-bottom: 10px;
-  }
-  .boxmeta {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .buttonContainer > div {
-    margin-bottom: 8%;
-    padding-top: 18px;
-  }
-  .whatIs , .team , .roadmap, .contribute {
-    padding-top: 20px;
-  }
-  .whatIsHeader {
-    padding-top: 20px;
-  }
-  .boxhome {
-    padding-top: 10px;
-    padding-bottom: 15px;
+  .partner {
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 }
 
 @media (max-width: 425px) {
   html {
-    font-size: 85%;
+    font-size: 75%;
   }
   .middleNav {
     display: none;
   }
   .titleICO {
-    font-size: 1.4em;
+    max-width: 125px;
   }
 }
 
 @media (max-width: 375px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
   .container .header1 {
     font-size: 1.85em;
+  }
+  .buttonContainer {
+    max-width: 150px;
+  }
+  .boxContribute {
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 320px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
+  }
+  .titleICO {
+    max-width: 100px;
   }
 }
 
@@ -149,40 +136,39 @@ body {
             radial-gradient(ellipse at bottom, #121415, transparent);
   padding: auto;
   margin: auto;
-  color:white;
+  color:#c7d2da;
 }
 
 nav {
-  background-color: #121415;
+  background-color: #181c1f;
   display:flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   margin: auto;
-  box-shadow: 0 4px 4px rgba(0,0,0,.5);
+  border: 1px solid #323436af;
   z-index: 1000;
   width: 100%;
   max-width: 100%;
 }
 
-.Neycoin img {
+.zapcoin {
+  display: flex;
+  max-width: 65px;
+  max-height: 65px;
   padding-top: 12px;
   padding-bottom: 12px;
-  max-width:75px;
-  max-height:75px;
-  width: 100%;
-  margin-left: 15%;
+  padding-left: 12px;
+}
+
+.Neycoin {
+  display: flex;
 }
 
 .titleICO {
-  margin-left: 2%;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #ff8c00;
-  opacity: 0.98;
 }
-
 .titleICO > i {
   font-size: 1em;
   align-items: center;
@@ -190,7 +176,6 @@ nav {
 
 .titleICO > div {
   width: 100%;
-  font-size: 1.3em;
 }
 
 .middleNav {
@@ -220,56 +205,56 @@ nav {
   width:100%;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: none;
+}
+
+.joinsale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 2.1em;
+  color: #fff;
+}
+
+.allbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  width: 100%;
+  max-width: 1000px;
+  width:100% ;
+  display: flex;
+  justify-content:center;
   align-items: center;
-  padding-bottom: 1%;
   opacity: 0.95;
 }
 
 .containerMiddle {
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: block;
-  max-width:1000px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width:500px;
   width: 100%;
-  margin: auto;
-  color: white;
-  opacity: 0.95;
-}
-
-.header1 {
-  font-size: 2em;
-  color: #ff8c00;
-  display: block;
+  padding: 10px;
+  color: #e9e6e6;
 }
 
 .flex {
   display: flex;
 }
 
-.neyContainer img {
-  max-width:200px;
-  max-height:200px;
-  width: 100%;
-  opacity: 0.95;
-  margin-top: 10%;
-}
-
 .buttonContainer > div{
-  display: block;
-  overflow: auto;
-  margin-top: -1%;
+  display: flex;
 }
 
-.textArea {
-  width: 100%;
-  max-width: 672px;
-  font-size: 1.4em;
-  opacity: 0.95;
+.buttonContainer {
+  display: flex;
+  padding-right: 20px;
 }
 
 .space-around {
@@ -281,52 +266,53 @@ nav {
 }
 
 .tokenSaleContainer {
-   max-width: 1000px;
+   align-items: center;
+   justify-content: center;
+   max-width: 500px;
 	 width: 100%;
-	 background-color: #121415;
-   box-shadow: 0px 1px 8px rgba(0,150,255,1);
-   padding-top: 1%;
-   padding-bottom: 2%;
-   border: 1px solid #1e90ff;
-   margin-top: 2.3%;
+	 background-color: #181c1f;
+   box-shadow: 0px 1px 8px rgb(10, 10, 10);
+   padding: 5px;
+   border: 1px solid #323436af;
+   margin: 5px;
    display: flex;
+   border-radius: 15px;
 }
 
 .tokenSaleLeftSide {
   max-width: 500px;
   width: 100%;
-  height: 100%;
-  margin-top: 1%;
-  padding-right: 2%;
-  padding-left: 2%;
-  border-right: 1px solid #fff;
+  border-radius: 15px;
+  padding: 5px;
+  max-height: 200px;
 }
 
-.tokensSold, .contributors {
-  font-size:1.35em;
-  color: #fff;
-  opacity:0.95;
+.tokensSold {
+  display: flex;
+  justify-content: space-between;
+  font-size:1.2em;
+  padding-bottom: 2px;
 }
 
-.totalSuppy {
- margin-top: 3%;
- margin-bottom: 3%;
- font-size:1.6em;
- color:#fff;
- opacity:0.95;
+.contributors {
+  display: flex;
+  justify-content: space-between;
+  font-size:1.2em;
+  border-top: 1px solid #444647af;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .tokenSaleRightSide {
-  margin-top: 0.8%;
   max-width: 500px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .titleTokenSale {
   font-size: 1.7em;
-  color: #fff;
+  color: #e9e6e6;
   max-width: 500px;
   width: 100%;
   align-items: center;
@@ -341,22 +327,16 @@ nav {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  color: #fff;
   font-size: 1em;
-  opacity: 0.95;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 .time {
   margin-top: 3%;
 }
-.time > div {
-  color: #fff;
-}
+
 .headerTime {
-  color: #fff;
   font-weight: bold;
-  font-size: 1.7em;
-  opacity: 0.95;
+  font-size: 1.6em;
 }
 .Icons {
   max-width: 800px;
@@ -377,17 +357,21 @@ nav {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  font-size: 2.1em;
-  color: #ff8c00;
+  font-size: 2em;
+  color: #fff;
   opacity: 0.95;
-  margin-top:7%;
-  margin-bottom:4%;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 10px;
+}
+
+.team {
+  font-size: 1.6em;
 }
 
 .contribute {
   display: none;
+  max-width: 500px;
 }
 
 .textAreaWhatIs {
@@ -396,80 +380,124 @@ nav {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .whatIsHeader  {
+  border-top: 1px solid #444649af;
+  padding: 5px;
   font-size:1.2em;
-  color: #ff8c00;
+  color: #a387ff;
   opacity:0.95;
   font-weight:bold;
-  margin-bottom:2%;
+  margin-bottom:1%;
   margin-top:2%;
 }
 
-.whitepaper {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top:7%;
-}
-
-.roadmapImage img {
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.whatIsHeader1  {
+  padding: 5px;
+  font-size:1.2em;
+  color: #a387ff;
+  opacity:0.95;
+  font-weight:bold;
+  margin-bottom:2%;
 }
 
 .boxContribute {
-  display: none;
-  padding-left: 10px;
   padding-right: 10px;
 }
 
 .contributeContainer {
-  padding-right: 10px;
-  padding-left: 10px;
-  max-width: 1000px;
+  color: #e9e6e6;
+  background-color: #181c1f;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #1e90ff;
-  margin-bottom: 7%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  box-shadow: 0px 1px 8px rgba(0,150,255,1);
+  border: 1px solid #323436af;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 1px 8px rgb(10, 10, 10);
 }
 
 .TextField {
-  background-color: white;
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  background-color: #252a2e;
+  border-radius:15px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.textbnb {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  justify-content:flex-end;
+  padding-right: 10px;
+}
+
+input[type=text] {
+  display: flex;
+  max-width: 450px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  text-align: end;
+  font-size: 1.3em;
+}
+
+.receive {
+  width: 100%;
+  max-width: 450px;
+  background-color: #252a2e;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 1.1em;
+}
+
+.receive1 {
+  max-width: 450px;
+  width: 100%;
+  text-align: end;
+  padding-right: 10px;
 }
 
 .buyCoins {
+  max-width: 500px;
+  width: 100%;
   font-size: 1.3em;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .amountToBuy {
+  padding: 10px;
   font-weight:bold;
   color:white;
   opacity: 0.95;
+  font-size: 1.1em;
 }
 
 .etherNey {
+  padding: 10px;
   color:white;
   opacity:0.9;
 }
@@ -478,26 +506,50 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   font-size:1.6em;
-  max-width: 500px;
+  max-width: 440px;
   width: 100%;
   margin: 0 auto;
   background-color:#43A047;
   margin-top: 2%;
   color: white;
   padding: 20px;
+  border-radius: 20px;
 }
+
 .buttonBuy {
-  max-width: 1000px;
+  max-width: 500px;
   width: 100%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  padding-top: 2.5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding: 10px;
 }
+
+.button1 {
+  max-width: 450px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #784ffe;
+  border:#121415;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #5132b8;
+}
+
 .errorMessage {
-  max-width: 500px;
+  max-width: 450px;
   width: 100%;
   margin: 0 auto;
   background-color:#D32E30;
@@ -509,6 +561,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 1.1em;
+  border-radius: 20px;
 }
 .errorMessage > i {
   margin-right: 2%;
@@ -529,7 +582,6 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 1px;
 }
 .loadingContainer {
   display: flex;
@@ -542,13 +594,14 @@ nav {
 }
 
 .footer {
-  background-color: #121415;
+  background-color: #181c1f;
+  border: 1px solid #323436af;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   margin: auto;
-  box-shadow: 0 4px 4px rgba(0,0,0,.5);
+  box-shadow: 0 1px 4px rgba(0,0,0,.5);
   z-index: 1000;
   width: 100%;
   max-width: 100%;
@@ -562,7 +615,7 @@ nav {
 
 .boxtoken {
   max-width: 1000px;
-  width: 100%;
+  width: 10%;
   margin-top: 2%;
   display: flex;
 }
@@ -582,16 +635,12 @@ nav {
 }
 
 .texthowbuy {
-  padding-right: 10px;
-  padding-left: 10px;
-  max-width: 1000px;
+  max-width: 935px;
   width: 100%;
   margin: 0 auto;
   font-size: 1.4em;
-}
-
-.neyadr {
-  overflow:auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .boxhome {
@@ -604,14 +653,151 @@ nav {
   margin-top: 8%;
 }
 
-.bsclink {
-  text-decoration: none;
+.boxtexthowtobuy {
+  background-color: #181c1f;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #323436af;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0px 1px 8px rgb(10, 10, 10);
 }
 
-.pancakelink {
-  text-decoration: none;
+.you {
+  font-size: 0.7em;
+  color: #c7d2da;
+  padding: 1px;
 }
 
-.wtplink {
-  text-decoration: none;
+.connect {
+  max-width: 500px;
+  max-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #784ffe;
+  border:#121415;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+.connect:hover {
+  background-color: #5132b8;
+}
+
+.meta {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction:rtl;
+}
+
+.bnbchain {
+  display: flex;
+  max-width: 40px;
+  max-height: 40px;
+  padding-right: 6px;
+}
+
+.zaplogo {
+  display: flex;
+  max-width: 110px;
+  width: 100%;
+}
+
+.btthow {
+  max-width: 200px;
+  width: 100%;
+  background-color: #181c1f;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.btthow:hover {
+  background-color: #323436af;
+  color:#fff;
+}
+
+.text1 {
+  padding-left: 5px;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2.1em;
+  color: #fff;
+}
+
+.container1 {
+  background-color:#181c1f ;
+  border: 1px solid #323436af;
+  box-shadow: 0px 1px 8px rgb(10, 10, 10);
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 910px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 img {
+  padding: 12px;
+  max-width: 280px;
+  max-height: 280px;
+  width: 100%;
+  display: flex;
+}
+
+.neyadr {
+  display: flex;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.copybutton {
+  display: flex;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #181c1f;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 0.3s;
+}
+
+.copybutton:hover {
+  background-color: #252a2e;
 }

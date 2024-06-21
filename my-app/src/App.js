@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Button from '@mui/material/Button';
 import Start from './components/Start';
-import About from './components/About';
-import Whitepaper from './components/Whitepaper';
-import Roadmap from './components/Roadmap';
-import Contribute from './components/Contribute';
 import Team from './components/Team';
+import Partner from './components/Partner';
 import scrollToComponent from 'react-scroll-to-component';
-import logo from './logo/neycoin32.png';
-import bnbimg from './logo/binance-coin.png';
+import zapcoin from './logo/zapcoin.png';
+import zaplogo from './logo/zaplogo.png';
+import bnbimg from './logo/bnbchain.png';
+import ConnectButton from './components/wallet/ConnectButton';
 
 import ico from './ethereum/ico'
 import web3 from './web3';
 
-console.log(logo);
+
+console.log(zapcoin);
 
 class App extends Component {
 
@@ -53,21 +53,22 @@ async componentDidMount(){
      <div>
         <nav>
           <div class="Neycoin">
-            <img src={logo} alt="Logo"/>
+            <img class="zapcoin" src={zapcoin} alt="Logo"/>
+            <a href="/" class="titleICO"><img class="zaplogo" src={zaplogo} alt="Logo"/></a>
           </div>
-          <a href="/" class="titleICO">
-            <div>MENINO NEY TOKEN</div>
-          </a>
+          
           <div class="middleNav">
-              <i onClick={() => scrollToComponent(this.About, { offset: -60, align: 'top', duration: 1500})}><Button>About</Button></i>
-              <i onClick={() => scrollToComponent(this.Roadmap, { offset: -60, align: 'top', duration: 1500})}><Button>RoadMap</Button></i>
-              <i onClick={() => scrollToComponent(this.Team, { offset: -60, align: 'top', duration: 1500})}><Button>How to Buy?</Button></i>
+              <i onClick={() => scrollToComponent(this.Team, { offset: -60, align: 'top', duration: 1500})}><Button class="btthow" variant='contained'>How to Buy</Button></i>
           </div>
 
           <div class="rightNav">
             <img src={bnbimg} alt="bnb"/>
 
-            <div class="myAccountBox">
+             <div class="buttonContainer">
+              <ConnectButton variant="contained" color="primary" onClick></ConnectButton>
+            </div>
+
+          <div class="myAccountBox">
               <div class="address">{this.state.myAddress}</div>
               <div class="eth">{"BNB:" + this.state.myEther}</div>
               <div class="neytoken">{"NEY:" + this.state.myBalance}</div>
@@ -76,11 +77,9 @@ async componentDidMount(){
 
         </nav>
 
+        <div class="joinsale">Join Private Sale</div>
         <div id="startDiv"> <Start/> </div>
-        <div ref={(section) => { this.About = section; }}><About/></div>
-        <div ref={(section) => { this.Whitepaper = section; }}><Whitepaper/></div>
-        <div ref={(section) => { this.Roadmap = section; }}><Roadmap/></div>
-        <div ref={(section) => { this.Contribute = section; }}><Contribute/></div>
+        <div><Partner></Partner></div>
         <div ref={(section) => { this.Team = section; }}><Team/></div>
 
       </div>

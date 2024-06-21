@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import CircularProgress from '@mui/material/CircularProgress';
+import logo from '../logo/bnblogo.png';
+import zapcoin from '../logo/zapcoin.png';
 
 import web3 from '../web3';
 import ico from '../ethereum/ico';
@@ -36,19 +38,20 @@ onSubmit = async event => {
   render() {
     return (
       <div>
-        <div class="contribute">JOIN PRESALE</div>
          <div class="boxContribute">
           <div class=" contributeContainer">
             <form onSubmit= {this.onSubmit}>
               <div class="buyCoins">
-                <div class="amountToBuy">Amount of BNB to Buy:</div>
-                <div class="TextField">
-                <TextField value={this.state.value} onChange= {event => this.setState({value:event.target.value})}> </TextField></div>
-                <div>  ≈  {this.state.value * 3500000} NEY </div>
-                <div class="etherNey">(1 BNB = 3.500.000 NEY) </div>
+                <div class="amountToBuy">1 BNB = 10000 ZAP</div>
+                <div class="TextField"> <img class="bnbchain" src={logo} alt="Logo"/> BNB  
+                <TextField class="textbnb" variant="standard" InputProps={{disableUnderline: true,}} value={this.state.value} onChange= {event => this.setState({value:event.target.value})}></TextField></div>
+                <div class="you" >You receive</div>
+                <div class="receive"> <img class="bnbchain" src={zapcoin} alt="Logo"/> ZAP
+                  <div class="receive1">{this.state.value * 10000}</div>
+                </div>
               </div>
               <div class="buttonBuy">
-                <Button type="submit" variant="contained" color="primary" value="Submit">BUY $NEY</Button>
+                <Button class="button1" type="submit" variant="contained" color="primary" value="Submit">BUY ZAP</Button>
               </div>
             </form>
 
@@ -70,7 +73,7 @@ onSubmit = async event => {
             : null}
 
             {this.state.success ? (
-            <div class="flex successfully">You successfully bought $NEY Coins!!</div>)
+            <div class="flex successfully">You successfully bought $ZAP Coins!!</div>)
             : null}
 
            </div>

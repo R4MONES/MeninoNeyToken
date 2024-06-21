@@ -113,7 +113,7 @@ contract Ownable is Context {
   }
 }
 
-contract NeyToken is Context, IBEP20, Ownable {
+contract ZapperIco is Context, IBEP20, Ownable {
   using SafeMath for uint256;
 
   mapping (address => uint256) private _balances;
@@ -130,15 +130,16 @@ contract NeyToken is Context, IBEP20, Ownable {
   address payable public admin;
 
   constructor() public {
-    _name = "Menino Ney Token";
-    _symbol = "NEY";
+    _name = "Zapper";
+    _symbol = "ZAP";
     _decimals = 18;
-    _totalSupply = 11000000000000000000000000000;
+    _totalSupply = 10000000000000000000000000 ;
     _balances[msg.sender] = _totalSupply;
     bonusEnds = now + 4 weeks;
     icoEnds = now + 4 weeks;
     icoStarts = now;
     admin = (msg.sender);
+    
 
     emit Transfer(address(0), msg.sender, _totalSupply);
   }
@@ -148,9 +149,9 @@ contract NeyToken is Context, IBEP20, Ownable {
         uint256 tokens;
 
         if(now <= bonusEnds) {
-            tokens =  msg.value.mul(3500000);  // 1 BNB = 3500000 NEY
+            tokens =  msg.value.mul(10000);  // 1 BNB = 10000 ZAP
         }else {
-            tokens =  msg.value.mul(0);  // 1 BNB = 0 NEY
+            tokens =  msg.value.mul(0);  // 1 BNB = 0 ZAP
         }
 
         _balances[msg.sender] = _balances[msg.sender].add(tokens);
